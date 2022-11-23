@@ -3,7 +3,7 @@ package org.example.creational.prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BirdRegistry {
+public class BirdRegister {
     private Map<String, Bird> birdsRegister = new HashMap<>();
 
     public void registerBird(String name, Bird bird) {

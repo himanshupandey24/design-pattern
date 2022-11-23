@@ -38,9 +38,9 @@ public class Client {
         Crow sweetSoundCrow = new Crow();
         sweetSoundCrow.setSound("kookoo");
 
-        BirdRegistry birdRegistry = new BirdRegistry();
-        birdRegistry.registerBird("sweetSoundCrow", sweetSoundCrow);
-        birdRegistry.registerBird("longLeggedSparrow", longLeggedSparrow);
+        BirdRegister birdRegister = new BirdRegister();
+        birdRegister.registerBird("sweetSoundCrow", sweetSoundCrow);
+        birdRegister.registerBird("longLeggedSparrow", longLeggedSparrow);
 
         List<String> getBirdOfTypes = List.of(
                 "sweetSoundCrow",
@@ -51,7 +51,7 @@ public class Client {
         List<Bird> requestedBirds = new ArrayList<>();
 
         for (String type: getBirdOfTypes) {
-            requestedBirds.add(birdRegistry.getBird(type));
+            requestedBirds.add(birdRegister.getBird(type));
         }
 
         System.out.println("Done");
