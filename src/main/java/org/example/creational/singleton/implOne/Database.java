@@ -1,6 +1,6 @@
 package org.example.creational.singleton.implOne;
 
-//Singleton Class
+//Singleton Class Single Threaded Implementation
 public class Database {
     private static Database instance = null;
 
